@@ -1,1 +1,1 @@
-include ':app', ':nexosdk-Dev-EmbonorChileDev-debug'
+include ':app'

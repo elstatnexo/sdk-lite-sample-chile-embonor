@@ -7,8 +7,8 @@ import android.bluetooth.le.ScanCallback
 import android.bluetooth.le.ScanResult
 import android.content.Context
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import com.elstatgroup.elstat.sdk.api.*
 import com.elstatgroup.elstat.sdk.api.NexoVerificationResult.NexoVerificationStatus.*
 import kotlinx.android.synthetic.main.activity_main.*
