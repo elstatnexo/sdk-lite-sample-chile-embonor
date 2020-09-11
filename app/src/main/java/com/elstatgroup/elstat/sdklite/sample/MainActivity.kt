@@ -1,5 +1,6 @@
 package com.elstatgroup.elstat.sdklite.sample
 
+import android.app.ActivityManager
 import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothDevice
 import android.bluetooth.BluetoothManager
@@ -86,6 +87,11 @@ class MainActivity : AppCompatActivity() {
 
         override fun onSuccess(nexoId: String?, result: String?) {
             Log.v("NexoSDKLiteSample", "$nexoId -> success: $result")
+            val am = getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager
+            val service = am.getRunningServices(Integer.MAX_VALUE)
+                .firstOrNull { it.process.contains("elstatgroup", true) }
+                ?.service?.className
+            Log.v("NexoSDKLiteSample", "Running service: $service")
         }
 
         override fun onError(nexoId: String?, error: NexoError) {
