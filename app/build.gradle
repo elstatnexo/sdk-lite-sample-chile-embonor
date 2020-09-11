@@ -43,7 +43,7 @@ ext.jacksonVersion = '2.5.1'
 
 dependencies {
 
-    implementation 'com.elstatgroup.nexo.sdk.lite:elstat-dev:2.0.5'
+    implementation 'com.elstatgroup.nexo.sdk.lite:coca-cola-brazil-live:2.0.5'
 //    implementation 'com.elstatgroup.nexo.sdk.lite:embonor-chile-live:2.0.2'
 
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
